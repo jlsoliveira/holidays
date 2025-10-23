@@ -1,0 +1,42 @@
+@reference "../../app/globals.css";
+
+.container {
+  @apply flex items-center gap-2;
+}
+
+.label {
+  @apply text-sm font-medium text-gray-800;
+}
+
+.selectWrapper {
+  @apply relative flex-1;
+}
+
+.select {
+  @apply w-full border rounded-full py-2 px-8 bg-white outline-none transition-shadow;
+  padding-right: 3rem;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.selectWrapper::after {
+  content: "";
+  position: absolute;
+  pointer-events: none;
+  top: 50%;
+  right: 1.25rem;
+  width: 0.5rem;
+  height: 0.5rem;
+  transform: translateY(-50%) rotate(45deg);
+  border-right: 2px solid #4b5563;
+  border-bottom: 2px solid #4b5563;
+}
+
+.primary {
+  @apply border-0 bg-gray-200 outline-none;
+}
+
+.outline {
+  @apply border-0 outline-none tracking-[.08em] text-gray-500;
+}

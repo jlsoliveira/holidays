@@ -1,0 +1,29 @@
+@reference "../../app/globals.css";
+
+.container {
+  @apply w-full overflow-x-auto rounded-xl mt-6;
+}
+
+.table {
+  @apply min-w-[640px] w-full border-collapse;
+}
+
+.headerRow {
+  @apply border-b border-gray-200;
+}
+
+.headerCell {
+  @apply text-left text-xs text-gray-500 font-semibold p-3;
+}
+
+.row {
+  @apply border-b border-gray-200 last:border-b-0;
+}
+
+.cell {
+  @apply py-7 px-3 text-sm text-gray-500;
+}
+
+.emptyCell {
+  @apply text-center p-6 text-sm text-gray-500;
+}
